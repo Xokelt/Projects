@@ -1,0 +1,83 @@
+[System]
+Name='GasometríaMOD6'
+Type='mamdani'
+Version=2.0
+NumInputs=3
+NumOutputs=4
+NumRules=13
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='pH'
+Range=[7 7.8]
+NumMFs=3
+MF1='Acidemia':'linzmf',[7.3 7.35]
+MF2='Equilibrio Acido-Base':'trapmf',[7.3 7.35 7.45 7.5]
+MF3='Alcalemia':'linsmf',[7.45 7.5]
+
+[Input2]
+Name='PaCO2 (mmHg)'
+Range=[10 70]
+NumMFs=3
+MF1='Hipobicarbonatemia':'linzmf',[30 35]
+MF2='Normobicarbonatemia':'trapmf',[30 35 45 50]
+MF3='Hiperbicarbonatemia':'linsmf',[45 50]
+
+[Input3]
+Name='Bicabonato (mEq/L)'
+Range=[6 42]
+NumMFs=3
+MF1='Hipocapnia':'linzmf',[18.5 22]
+MF2='Normocapnia':'trapmf',[18.5 22 26 29.5]
+MF3='Hipercapnia':'linsmf',[26 29.5]
+
+[Output1]
+Name='Situación metabólica'
+Range=[0 1]
+NumMFs=3
+MF1='Acidosis Metabólica':'linzmf',[0.3 0.4]
+MF2='Normalidad':'trapmf',[0.3 0.4 0.6 0.7]
+MF3='Alcalosis Metabólica':'linsmf',[0.6 0.7]
+
+[Output2]
+Name='Situación Respiratoria'
+Range=[0 1]
+NumMFs=3
+MF1='Acidosis Respiratoria':'linzmf',[0.3 0.4]
+MF2='Normalidad':'trapmf',[0.3 0.4 0.6 0.7]
+MF3='Alcalosis Respiratoria':'linsmf',[0.6 0.7]
+
+[Output3]
+Name='Compensación Respiratoria'
+Range=[0 1]
+NumMFs=3
+MF1='Sin Compensación':'trapmf',[0 0 0.2 0.4]
+MF2='Compensación Parcial':'trapmf',[0.2 0.4 0.6 0.8]
+MF3='Compensación Total':'trapmf',[0.6 0.8 1 1]
+
+[Output4]
+Name='Compensación Metabólica'
+Range=[0 1]
+NumMFs=3
+MF1='Sin Compensación':'trapmf',[0 0 0.2 0.4]
+MF2='Compensación Parcial':'trapmf',[0.2 0.4 0.6 0.8]
+MF3='Compensación Total':'trapmf',[0.6 0.8 1 1]
+
+[Rules]
+1 3 2, 0 1 0 1 (1) : 1
+1 3 3, 0 1 0 2 (1) : 1
+2 3 3, 0 1 0 3 (1) : 1
+3 1 2, 0 3 0 1 (1) : 1
+3 1 1, 0 3 0 2 (1) : 1
+2 1 1, 0 3 0 3 (1) : 1
+1 2 1, 1 0 1 0 (1) : 1
+1 1 1, 1 0 2 0 (1) : 1
+2 1 1, 1 0 3 0 (1) : 1
+3 2 3, 3 0 1 0 (1) : 1
+3 3 3, 3 0 2 0 (1) : 1
+2 3 3, 1 0 3 0 (1) : 1
+2 2 2, 2 2 0 0 (1) : 1
