@@ -21,6 +21,4 @@ Here are some of the projects I've worked on:
 - **LinkedIn:** [linkedin.com/in/xokelt](https://www.linkedin.com/in/xokelt)
 - **Twitter:** [@Xokelt](https://twitter.com/Xokelt)
 
-Feel free to reach out if you want to collaborate on a project or just chat about tech!
-
 Thanks for visiting my profile!
