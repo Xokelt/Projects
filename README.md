@@ -5,7 +5,7 @@ I'm passionate about technology and love working on innovative projects. I have 
 
 ## Skills
 
-- **Programming Languages:** Python, R
+- **Programming Languages:** Python, R, MATLAB
 - **Databases:** MySQL, PostgreSQL
 
 ## Projects
