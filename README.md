@@ -18,6 +18,5 @@ Here are some of the projects I've worked on:
 
 - **Email:** [xokelt@example.com](mailto:xokelt@example.com)
 - **LinkedIn:** [linkedin.com/in/xokelt](https://www.linkedin.com/in/xokelt)
-- **Twitter:** [@Xokelt](https://twitter.com/Xokelt)
 
 Thanks for visiting my profile!
