@@ -15,10 +15,6 @@ Here are some of the projects I've worked on:
 
 - **Preclinical Prediction of Drugs for the Prevention of Macular Degeneration in Mice. (Final Master's Project):** Using OCT images of mice, a method for evaluating different drugs in mice will be developed to assess the prevention of macular degeneration and its subsequent application in humans.
 
-## GitHub Stats
-
-![Xokelt's GitHub stats](https://github-readme-stats.vercel.app/api?username=Xokelt&show_icons=true&theme=radical)
-
 ## Get in Touch
 
 - **Email:** [xokelt@example.com](mailto:xokelt@example.com)
