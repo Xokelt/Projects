@@ -1,4 +1,3 @@
-# Hi there, I'm Xokelt! 👋
 
 ## About Me
 
